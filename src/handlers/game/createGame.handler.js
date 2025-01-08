@@ -16,6 +16,14 @@ const createGameHandler = ({ socket, userId, payload }) => {
     const gameSession = addGameSession(gameId);
 
     const user = getUserById(userId);
+
+    console.log(user);
+
+    if (user) {
+      console.log(`User: ${JSON.stringify(user)}`); // 객체를 문자열로 변환해서 출력
+    } else {
+      console.log(`User not found for ID: ${userId}`);
+    }
     if (!user) {
       throw new CustomError(
         ErrorCodes.USER_NOT_FOUND,

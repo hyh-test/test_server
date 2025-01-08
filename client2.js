@@ -7,7 +7,7 @@ const PACKET_TYPE_LENGTH = 1; // 패킷타입을 나타내는 1바이트
 let userId;
 let sequence;
 const deviceId = "xxxxx";
-let gameId = "63a695a4-c1fb-4d9f-a0d5-8c3f98c12165";
+let gameId = "2936fb0a-46c0-49b8-b3cb-365e772b8280";
 
 const createPacket = (
   handlerId,
